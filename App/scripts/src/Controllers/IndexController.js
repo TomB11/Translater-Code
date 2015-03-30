@@ -1,0 +1,1 @@
+App.controller ('IndexController', function(){});

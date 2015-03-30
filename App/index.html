@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+
+  <head>
+    <title>Translater</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  </head>
+
+  <body class="ALL">
+    <div class="container">
+      <a alt="Responsive image" href="#/"><img class="img-responsive" src="style/img/logo.png"></a>
+      <p1><font size="12" color="silver" style="margin-left:20px;"><b>Translater</b></font></p1>
+      <img src="style/img/international.png" class="img-circle" alt="Responsive image">
+      <div class="row" ng-controller="ButtonController">
+        <div ng-repeat="language in languages">
+          <a class="btn" href="#language/{{language}}" role="button"><b>{{language}}</b></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container2" width="967px">
+            <div ng-view></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular-resource.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.13/angular-route.min.js"></script>
+    <script src="dist/min.annotate.js"></script>
+  </body>
+
+</html>

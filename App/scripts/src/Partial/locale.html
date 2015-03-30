@@ -1,0 +1,41 @@
+      <div class="bigBoard">
+        <img src="style/img/{{model.locale}}.png" class="img-rounded" alt="Responsive image">
+        <p><font size="12" class="country">{{model.locale}}</font></p>
+        <img src="style/img/{{model.locale}}.png" class="image2 img-rounded" alt="Responsive image">
+      </div>
+      <br>
+        <div class="add" ng-factory="Languages">
+          <h1 class="newWord">New Word</h1>
+          <input class="input1" placeholder="Add new word" type="text" ng-model="key"><br>
+          <input class="input2" placeholder="Add new translate" type="text" ng-model="value">
+          <br>
+          <br>
+          <button type="button" ng-click="addWord(key, value); clear(key, value)">Add</button>
+        </div>
+      <div class="tableClass">
+        <p class="word">Word</p>
+        <p class="translate">Translate</p>
+        <table class="table table-condensed">
+          <tr ng-repeat="(key, value) in locale track by $index">
+            <td>
+
+            <span ng-show="!showPanel">{{key}}</span>
+            <div ng-show="showPanel"><input class="form-control" type="text" ng-model="key"/></div>
+
+            </td>
+            <td>
+
+            <span ng-show="!showPanel">{{value}}</span>
+            <div ng-show="showPanel"><input class="form-control" type="text" ng-model="value"/></div>
+
+            </td>
+            <td> 
+
+            <a ng-model="showPanel" href="" class="btn2 btn-default btn-xs" ng-click="showPanel = true">Edit</a>
+            <a ng-show="showPanel" href="" class="btn2 btn-primary btn-xs" ng-click="showPanel = false; save(key, value)">Save</a>
+            <a ng-show="showPanel" href="" class="btn2 btn-danger btn-xs" ng-click="showPanel = false; deleteItem(key, value)">Delete</a>
+
+            </td>
+          </tr>
+        </table>
+      </div>

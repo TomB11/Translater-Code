@@ -1,0 +1,113 @@
+.ALL {
+    background-image: url("img/neon2.png");
+    background-size: 1600px 600px;
+}
+
+.container {
+    background-image: url("img/neon1.png");
+    background-size: 1300px 100px;
+	height: 100px;
+	border: 1px solid silver;
+    opacity: 0.9;
+}
+
+.container2 {
+	margin-left: 304px;
+	margin-right: 90px;
+	padding-top: 10px;
+	height: 2200px;
+	background-color: #000;
+	float: left;
+    opacity: 0.7;
+}
+
+.ALLbody {
+	background-color: #eee;
+}
+
+.row {
+	width: 205px;
+    border: 1px solid white;
+    margin-top: 30px;
+    background-color: silver;
+}
+
+.btn {
+	width: 203px;
+	background-color: #000;
+	border: 1px solid white;
+	margin-top: 1px;
+	color: silver;
+}
+
+.img-circle {
+	float: right;
+	width: 110px;
+	height: 80px;
+}
+
+.img-responsive {
+	width: 80px;
+	float: left;
+}
+
+/*----------------------------*/
+.bigBoard {
+	height: 70px;
+}
+.img-rounded {
+	margin-left: 20px;
+	float: left;
+}
+.image2 {
+	float: right;
+	margin-right: 20px;
+}
+.country {
+	text-align: center;
+	float: left;
+	color: silver;
+	width: 692px;
+}
+/*----------------------------*/
+
+.newWord {
+	color: silver;
+}
+
+.word {
+	float: left;
+	margin-left: 4px;
+	font-size: 200%;
+	color: silver;
+	padding-right: 170px;
+}
+
+.translate {
+	margin-left: 260px;
+	font-size: 200%;
+	color: silver;
+}
+
+.tableClass {
+	margin-top: 30px;
+	margin-right: 20px;
+	margin-left: 400px;
+	color: silver;
+}
+
+.input1 {
+	padding-right: 200px;
+	margin-right: 150px;
+}
+
+.input2 {
+	padding-right: 200px;
+	margin-right: 150px;
+}
+
+.add {
+	margin-left: 20px;
+	width: 380px;
+	float: left;
+}
